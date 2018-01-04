@@ -37,7 +37,7 @@ public class ReadFile {
 		File file = new File(fileName);
 		InputStream in = null;
 		try {
-//			logger.info("以字节为单位读取文件内容，一次读一个字节：");
+			// logger.info("以字节为单位读取文件内容，一次读一个字节：");
 			// 一次读一个字节
 			in = new FileInputStream(file);
 			int tempbyte;
@@ -67,7 +67,7 @@ public class ReadFile {
 		StringBuilder sbuild = new StringBuilder();
 		InputStream in = null;
 		try {
-//			logger.info("以字节为单位读取文件内容，一次读多个字节：");
+			// logger.info("以字节为单位读取文件内容，一次读多个字节：");
 			// 一次读多个字节
 			byte[] tempbytes = new byte[100];
 			in = new FileInputStream(fileName);
@@ -104,7 +104,7 @@ public class ReadFile {
 		File file = new File(fileName);
 		BufferedReader reader = null;
 		try {
-//			logger.info("以行为单位读取文件内容，一次读一整行：");
+			// logger.info("以行为单位读取文件内容，一次读一整行：");
 			reader = new BufferedReader(new FileReader(file));
 			String tempString = null;
 			// 一次读入一行，直到读入null为文件结束
@@ -129,7 +129,7 @@ public class ReadFile {
 	}
 
 	/**
-	 * 以字符为单位读取文件，常用于读文本，数字等类型的文件 
+	 * 以字符为单位读取文件，常用于读文本，数字等类型的文件
 	 * 
 	 * 以字符为单位读取文件内容，一次读一个字节
 	 * 
@@ -142,7 +142,7 @@ public class ReadFile {
 		File file = new File(fileName);
 		Reader reader = null;
 		try {
-//			logger.info("以字符为单位读取文件内容，一次读一个字节：");
+			// logger.info("以字符为单位读取文件内容，一次读一个字节：");
 			// 一次读一个字符
 			reader = new InputStreamReader(new FileInputStream(file));
 			int tempchar;
@@ -166,7 +166,7 @@ public class ReadFile {
 	/**
 	 * 以字符为单位读取文件，常用于读文本，数字等类型的文件
 	 * 
-	 *  以字符为单位读取文件内容，一次读多个字节（30）
+	 * 以字符为单位读取文件内容，一次读多个字节（30）
 	 * 
 	 * @param fileName
 	 *            文件名
@@ -176,7 +176,7 @@ public class ReadFile {
 		StringBuilder sbuild = new StringBuilder();
 		Reader reader = null;
 		try {
-//			logger.info("以字符为单位读取文件内容，一次读多个字节：");
+			// logger.info("以字符为单位读取文件内容，一次读多个字节：");
 			// 一次读多个字符
 			char[] tempchars = new char[30];
 			int charread = 0;
@@ -225,4 +225,5 @@ public class ReadFile {
 			e.printStackTrace();
 		}
 	}
+
 }
