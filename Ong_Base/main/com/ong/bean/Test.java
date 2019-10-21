@@ -47,7 +47,8 @@ public class Test {
 		String str = generateJsonStr();
 		System.out.println("Original str is "+str);
 		List<TestBean> testBean = JSON.parseArray(str,TestBean.class);
-		for(TestBean tb : testBean)
+		for(TestBean tb : testBean){
 			System.out.println(tb.get_id());
+		}
 	}
 }
