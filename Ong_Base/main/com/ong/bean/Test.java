@@ -50,5 +50,6 @@ public class Test {
 		for(TestBean tb : testBean){
 			System.out.println(tb.get_id());
 		}
+		//Im test2
 	}
 }
